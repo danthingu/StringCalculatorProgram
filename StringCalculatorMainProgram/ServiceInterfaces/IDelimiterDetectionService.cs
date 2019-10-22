@@ -7,5 +7,6 @@ namespace StringCalculatorMainProgram.ServiceInterfaces
     public interface IDelimiterDetectionService
     {
         char[] GetIdentifier(string numbers);
+        string[] SplitDelimiters(string numbers, string delimiter);
     }
 }
