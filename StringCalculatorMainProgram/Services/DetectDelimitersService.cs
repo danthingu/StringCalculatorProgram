@@ -21,7 +21,6 @@ namespace StringCalculatorMainProgram.Services
             }
             return numbers.Length > 1 && (numbers[0] == '/' && numbers[1] == '/') ? delimiter.Substring(2).ToCharArray() : new[] { ',' };
         }
-
         public string[] SplitDelimiters(string numbers, string delimiter) => numbers.Split(delimiter.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
     }
 }

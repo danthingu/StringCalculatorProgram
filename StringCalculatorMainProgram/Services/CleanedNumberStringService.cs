@@ -8,16 +8,14 @@ namespace StringCalculatorMainProgram.Services
 {
     public class CleanedNumberStringService : ICleanedNumberStringService
     {
-        private string _numbers;
-        private string _delimiters;
-
-        private string GetNumbersAfterCleaned(string numbers) => !_delimiters.Contains(',') ? numbers.Substring(_delimiters.Length + 3).Replace("\n", _delimiters) : numbers.Replace("\n", _delimiters);
-
-        public object CleanNumbersString(IDetectDelimitersService delimiterDetectionService, string numbers)
+        public string Numbers;
+        public string Delimiters;
+        private string GetNumbersAfterCleaned(string numbers) => !Delimiters.Contains(',') ? numbers.Substring(Delimiters.Length + 3).Replace("\n", Delimiters) : numbers.Replace("\n", Delimiters);
+        public object CleanNumbersString(IDetectDelimitersService detectDelimitersService, string numbers)
         {
-            _delimiters = delimiterDetectionService.GetIdentifier(numbers).Aggregate("", (current, item) => current + item.ToString());
-            _numbers = GetNumbersAfterCleaned(numbers);
-            return new { _numbers, _delimiters };
+            Delimiters = detectDelimitersService.GetIdentifier(numbers).Aggregate("", (current, item) => current + item.ToString());
+            Numbers = GetNumbersAfterCleaned(numbers);
+            return new { Numbers, Delimiters };
         }
     }
 }
