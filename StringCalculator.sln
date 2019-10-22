@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculator", "StringC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorMainProgram", "StringCalculatorMainProgram\StringCalculatorMainProgram.csproj", "{1F109FCE-B2F2-4CC0-926E-20E4954B8AA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorMainProgram.Test", "StringCalculatorMainProgram.Test\StringCalculatorMainProgram.Test.csproj", "{C836F2B2-20ED-45D1-AD80-B0FBDD9F78B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1F109FCE-B2F2-4CC0-926E-20E4954B8AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F109FCE-B2F2-4CC0-926E-20E4954B8AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F109FCE-B2F2-4CC0-926E-20E4954B8AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C836F2B2-20ED-45D1-AD80-B0FBDD9F78B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C836F2B2-20ED-45D1-AD80-B0FBDD9F78B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C836F2B2-20ED-45D1-AD80-B0FBDD9F78B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C836F2B2-20ED-45D1-AD80-B0FBDD9F78B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
