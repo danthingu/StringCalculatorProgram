@@ -4,10 +4,8 @@ using System.Text;
 
 namespace StringCalculatorMainProgram.Shares
 {
-    class NegativeNumberException: Exception
+    public class NegativeNumberException: Exception
     {
-        public NegativeNumberException(string message) : base(message)
-        {
-        }
+        public NegativeNumberException(string message) : base(message) { }
     }
 }

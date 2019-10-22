@@ -5,7 +5,7 @@ using System.Text;
 
 namespace StringCalculatorMainProgram.Services
 {
-    public class DelimiterDetectionService : IDelimiterDetectionService
+    public class DetectDelimitersService : IDetectDelimitersService
     {
         public char[] GetIdentifier(string numbers)
         {

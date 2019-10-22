@@ -8,6 +8,6 @@ namespace StringCalculator
     {
         //Dependency Injection(DI) patterns are all about removing dependencies from your code.
         static void Main(string[] args) =>
-            _ = new StringCalculatorMainApplication(new ValidateNumberService(), new CleanedNumberStringService(), new DelimiterDetectionService());
+            _ = new StringCalculatorMainApplication(new ValidateNumberService(), new CleanedNumberStringService(), new DetectDelimitersService(), new DetectNegativeNumbersService());
     }
 }

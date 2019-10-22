@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StringCalculatorMainProgram.ServiceInterfaces
 {
-    public interface IDelimiterDetectionService
+    public interface IDetectDelimitersService
     {
         char[] GetIdentifier(string numbers);
         string[] SplitDelimiters(string numbers, string delimiter);

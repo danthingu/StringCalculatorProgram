@@ -6,7 +6,7 @@ namespace StringCalculatorMainProgram.ServiceInterfaces
 {
     public interface ICleanedNumberStringService
     {
-        public object CleanNumbersString();
+        public object CleanNumbersString(IDetectDelimitersService delimiterDetectionService, string numbers);
 
     }
 }

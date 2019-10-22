@@ -6,6 +6,6 @@ namespace StringCalculatorMainProgram.ServiceInterfaces
 {
     public interface IDetectNegativeNumbersService
     {
-        bool isNegativeNumbersExistInString();
+        bool isNegativeNumbersExistInString(IDetectDelimitersService delimiterDetectionService, string numbers, string delimiters);
     }
 }

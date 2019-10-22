@@ -7,6 +7,7 @@ namespace StringCalculatorMainProgram.ServiceInterfaces
 {
     public interface IValidateNumberService
     {
-        ValidatorStatus ValidateNumber(string numbers, string delimiter = null);
+        ValidatorStatus ValidateNumber(IDetectDelimitersService delimiterDetectionService,
+                IDetectNegativeNumbersService detectNegativeNumbersService, string numbers, string delimiter = null);
     }
 }
